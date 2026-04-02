@@ -1,19 +1,457 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <title>Teammates html webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse Boakye — Software Developer</title>
+  <meta name="description" content="Software Developer & Computer Science Student at Washington State University">
+  <meta property="og:title" content="Jesse Boakye — Software Developer">
+  <meta property="og:description" content="Software Developer & Computer Science Student at Washington State University">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jesseboakye.github.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div style="margin: 25%">
-        <h2>Teammates html webpages</h2>
-        <ul>
-            <li>Adda</li>
-            <li><a href="elijah.html">Elijah</a></li>
-            <li><a href="ilda.html">Ilda</a></li>
-            <li><a href="jesse.html">Jesse</a></li>
-            <li><a href="sam.html">Sam</a></li>
-        </ul>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">JB</a>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <div class="hero__grain"></div>
+    <div class="hero__glow"></div>
+  </div>
+  <div class="hero__content">
+    <div class="hero__eyebrow reveal">Software Developer</div>
+    <h1 class="hero__title reveal">
+      <span class="hero__name">Jesse</span>
+      <span class="hero__name hero__name--accent">Boakye</span>
+    </h1>
+    <p class="hero__subtitle reveal">
+      Building robust systems at the intersection of
+      <em class="hero__em">full-stack development</em>,
+      <em class="hero__em">quantitative research</em>, and
+      <em class="hero__em">cybersecurity</em>.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#projects" class="btn btn--primary">View My Work</a>
+      <a href="#contact" class="btn btn--ghost">Get in Touch</a>
     </div>
+  </div>
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section__label reveal">01 / About</div>
+    <div class="about__grid">
+      <div class="about__text">
+        <h2 class="section__title reveal">
+          Crafting software<br>
+          <span class="text--accent">with intention.</span>
+        </h2>
+        <p class="about__bio reveal">
+          I'm a Computer Science student at Washington State University with a passion for
+          building systems that are both powerful and purposeful. From full-stack web applications
+          to quantitative trading platforms, I thrive on solving complex problems with clean,
+          efficient code.
+        </p>
+        <p class="about__bio reveal">
+          My interests span across secure software development, data-driven systems, and
+          creating tools that make a real impact. When I'm not coding, you'll find me
+          exploring cybersecurity concepts, contributing to open source, or diving into
+          the latest in distributed systems.
+        </p>
+        <div class="about__details reveal">
+          <div class="about__detail">
+            <span class="about__detail-label">Location</span>
+            <span class="about__detail-value">Pullman, WA</span>
+          </div>
+          <div class="about__detail">
+            <span class="about__detail-label">University</span>
+            <span class="about__detail-value">Washington State University</span>
+          </div>
+          <div class="about__detail">
+            <span class="about__detail-label">Degree</span>
+            <span class="about__detail-value">B.S. Computer Science, May 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__visual reveal">
+        <div class="about__photo-wrapper">
+          <img src="assets/images/profile.jpg" alt="Jesse Boakye" class="about__photo" loading="lazy">
+        </div>
+        <div class="about__card">
+          <div class="about__card-accent"></div>
+          <div class="about__card-content">
+            <div class="about__stat">
+              <span class="about__stat-number">3+</span>
+              <span class="about__stat-label">Years of<br>Development</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">5+</span>
+              <span class="about__stat-label">Languages<br>Proficient</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">3+</span>
+              <span class="about__stat-label">Projects<br>Shipped</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section__label reveal">02 / Skills</div>
+    <h2 class="section__title reveal">
+      Technical<br>
+      <span class="text--accent">arsenal.</span>
+    </h2>
+    <div class="skills__grid">
+      <div class="skills__category reveal">
+        <h3 class="skills__category-title">Languages</h3>
+        <div class="skills__pills">
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">C++</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">SQL</span>
+        </div>
+      </div>
+      <div class="skills__category reveal">
+        <h3 class="skills__category-title">Frameworks & Libraries</h3>
+        <div class="skills__pills">
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Express.js</span>
+          <span class="skill-pill">Redux Toolkit</span>
+          <span class="skill-pill">Firebase</span>
+          <span class="skill-pill">JWT</span>
+          <span class="skill-pill">Google OAuth</span>
+        </div>
+      </div>
+      <div class="skills__category reveal">
+        <h3 class="skills__category-title">Tools & Platforms</h3>
+        <div class="skills__pills">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">MongoDB</span>
+        </div>
+      </div>
+      <div class="skills__category reveal">
+        <h3 class="skills__category-title">Systems & Security</h3>
+        <div class="skills__pills">
+          <span class="skill-pill">Linux</span>
+          <span class="skill-pill">ELF Binaries</span>
+          <span class="skill-pill">Cross-Compilation</span>
+          <span class="skill-pill">GNU Toolchains</span>
+          <span class="skill-pill">QEMU</span>
+          <span class="skill-pill">binwalk</span>
+          <span class="skill-pill">Secure SDLC</span>
+        </div>
+      </div>
+      <div class="skills__category reveal">
+        <h3 class="skills__category-title">Methodology</h3>
+        <div class="skills__pills">
+          <span class="skill-pill">Agile</span>
+          <span class="skill-pill">Secure SDLC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section__label reveal">03 / Projects</div>
+    <h2 class="section__title reveal">
+      Selected<br>
+      <span class="text--accent">work.</span>
+    </h2>
+    <div class="projects__list">
+
+      <!-- Project 1 -->
+      <article class="project-card reveal">
+        <div class="project-card__number">01</div>
+        <div class="project-card__content">
+          <div class="project-card__year">2026</div>
+          <h3 class="project-card__title">Edge Lab Trading Research Platform</h3>
+          <p class="project-card__desc">
+            A Python-based quantitative research platform with modular backtesting,
+            walk-forward testing, and experiment reporting for strategy evaluation.
+            Features validation and audit-style pipelines for verifying trading session
+            behavior, risk controls, and promotion-gate logic for safer execution.
+          </p>
+          <div class="project-card__tags">
+            <span>Python</span>
+            <span>Quantitative Finance</span>
+            <span>Backtesting</span>
+            <span>Data Pipelines</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/jesseboakye" class="project-card__link" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+        <div class="project-card__visual">
+          <div class="project-card__mockup">
+            <div class="mockup__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup__content mockup__content--terminal">
+              <code>$ python run_backtest.py --strategy momentum</code>
+              <code class="mockup__output">[INFO] Loading 252 trading days...</code>
+              <code class="mockup__output">[INFO] Sharpe: 1.84 | MaxDD: -8.2%</code>
+              <code class="mockup__output mockup__output--success">[PASS] All validation gates cleared</code>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal">
+        <div class="project-card__number">02</div>
+        <div class="project-card__content">
+          <div class="project-card__year">2024</div>
+          <h3 class="project-card__title">Modern Real Estate Marketplace</h3>
+          <p class="project-card__desc">
+            A full-stack real estate marketplace built with the MERN stack. Features
+            secure authentication with JWT, Firebase, and Google OAuth, advanced search
+            with Redux Toolkit, and a complete property management system with image uploads.
+          </p>
+          <div class="project-card__tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Redux</span>
+            <span>Firebase</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/jesseboakye" class="project-card__link" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+        <div class="project-card__visual">
+          <div class="project-card__mockup">
+            <div class="mockup__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup__content mockup__content--browser">
+              <div class="mockup__search">
+                <div class="mockup__search-bar">Search properties...</div>
+              </div>
+              <div class="mockup__cards">
+                <div class="mockup__prop-card"></div>
+                <div class="mockup__prop-card"></div>
+                <div class="mockup__prop-card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal">
+        <div class="project-card__number">03</div>
+        <div class="project-card__content">
+          <div class="project-card__year">2023</div>
+          <h3 class="project-card__title">Restaurant Automation System</h3>
+          <p class="project-card__desc">
+            An application engineered to coordinate restaurant staff with real-time
+            table management and order tracking. Implemented efficient data pipelines
+            with caching and indexing that reduced retrieval latency by 40%.
+          </p>
+          <div class="project-card__tags">
+            <span>Full-Stack</span>
+            <span>Real-Time</span>
+            <span>Data Pipelines</span>
+            <span>Caching</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/jesseboakye" class="project-card__link" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+        <div class="project-card__visual">
+          <div class="project-card__mockup">
+            <div class="mockup__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup__content mockup__content--dashboard">
+              <div class="mockup__table-grid">
+                <div class="mockup__table mockup__table--occupied">T1</div>
+                <div class="mockup__table mockup__table--available">T2</div>
+                <div class="mockup__table mockup__table--occupied">T3</div>
+                <div class="mockup__table mockup__table--available">T4</div>
+                <div class="mockup__table mockup__table--pending">T5</div>
+                <div class="mockup__table mockup__table--available">T6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <div class="section__label reveal">04 / Experience</div>
+    <h2 class="section__title reveal">
+      Education &<br>
+      <span class="text--accent">involvement.</span>
+    </h2>
+    <div class="timeline">
+      <div class="timeline__item reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__date">Expected May 2026</div>
+          <h3 class="timeline__title">B.S. Computer Science</h3>
+          <div class="timeline__org">Washington State University, Pullman, WA</div>
+          <p class="timeline__desc">
+            Relevant coursework: Object-Oriented Software Principles, Computer Architecture,
+            Design & Analysis of Algorithms, Advanced Data Structures, Systems Programming,
+            Big Data, Software Engineering, Hardware Security & Firmware Analysis, Parallel Computing.
+          </p>
+        </div>
+      </div>
+      <div class="timeline__item reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__date">Organizations</div>
+          <h3 class="timeline__title">Clubs & Leadership</h3>
+          <div class="timeline__org">Washington State University</div>
+          <div class="timeline__clubs">
+            <span class="club-tag">Cyber Security Group</span>
+            <span class="club-tag">ACM</span>
+            <span class="club-tag">NSBE-WSU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section__label reveal">05 / Contact</div>
+    <h2 class="section__title reveal">
+      Let's build<br>
+      <span class="text--accent">something together.</span>
+    </h2>
+    <div class="contact__grid">
+      <div class="contact__info reveal">
+        <p class="contact__intro">
+          I'm always open to discussing new projects, creative ideas, or
+          opportunities to be part of something great.
+        </p>
+        <div class="contact__channels">
+          <a href="mailto:jesse.boakye@wsu.edu" class="contact__channel">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>jesse.boakye@wsu.edu</span>
+          </a>
+          <a href="tel:+14253465160" class="contact__channel">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(425) 346-5160</span>
+          </a>
+          <a href="https://linkedin.com/in/jesse-boakye" target="_blank" rel="noopener" class="contact__channel">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/jesseboakye" target="_blank" rel="noopener" class="contact__channel">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact__form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form__group">
+          <label for="name" class="form__label">Name</label>
+          <input type="text" id="name" name="name" class="form__input" required>
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input type="email" id="email" name="email" class="form__input" required>
+        </div>
+        <div class="form__group">
+          <label for="message" class="form__label">Message</label>
+          <textarea id="message" name="message" class="form__input form__textarea" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <span class="footer__logo">JB</span>
+      <span class="footer__copy">&copy; 2026 Jesse Boakye. All rights reserved.</span>
+    </div>
+    <div class="footer__right">
+      <a href="https://github.com/jesseboakye" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/jesse-boakye" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="#hero" class="footer__top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
