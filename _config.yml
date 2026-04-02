@@ -1,0 +1,14 @@
+title: Jesse Boakye
+description: Software Developer & Computer Science Student
+url: "https://jesseboakye.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - CLAUDE.md
+  - .claude
+  - Gemfile
+  - Gemfile.lock
